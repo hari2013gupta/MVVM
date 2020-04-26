@@ -14,7 +14,7 @@ public class NicePlaceRepository {
 
     public static NicePlaceRepository getInstance() {
         if (instance == null) {
-            return new NicePlaceRepository();
+            instance = new NicePlaceRepository();
         }
         return instance;
     }
