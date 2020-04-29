@@ -41,6 +41,7 @@ public class Login2Activity extends BaseActivity {
         loginViewModel.getLoginSuccess().observe(this, count -> {
             showToast("Login Success! " + count);
             startActivity(new Intent(activity, MainActivity.class));
+            finish();
         });
     }
 
